@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>June Layout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*
+{
+	padding :0;
+	margin : 0;
+	box-sizing : border-box;		
+}
+
+.header
+{
+	width : 100%;
+	height : 110px;
+	/*border : 1px solid black;*/
+}
+.header .logo
+{
+	width : 25%;
+	height : 100%;
+	/*border : 1px solid black;*/
+	float : left;
+	
+}
+.logo img
+{
+	width : 120px;
+	height : 120px;
+	margin-left : 30%;
+	margin-bottom : 10px;
+}
+.header .nav
+{
+	width : 50%;
+	height : 100%;
+	/*border : 1px solid black;*/
+	float : left;
+	padding-left : 12%;
+}
+.nav a
+{
+	text-decoration : none;
+	font-size : 1.3em;
+	color : black;
+	line-height : 120px;
+	margin-left : 25px;
+	
+}
+.nav a:hover
+{
+	color : royalblue;
+}
+.header .icon
+{
+	width : 25%;
+	height : 100%;
+	/*border :1px solid black;*/
+	float : right;	
+	padding : 30px;
+	padding-top : 50px;
+}
+.icon img
+{
+	width : 30px;
+	height : 30px;
+	
+}
+.slider
+{
+	width : 100%;
+	height : 600px;
+	background-image : url('./images/sld4.jpg');
+	background-size : 100% 100%;
+	padding : 50px;
+}
+.slider h1
+{
+	text-align:center;
+	font-size :5em;	
+	color : #ff8c00;
+}
+.slider p
+{
+	text-align: center;
+	padding-left: 450px;
+	padding-right : 450px;
+	font-size:1em;
+	color : white;
+}
+.content
+{
+	width : 80%;
+	min-height : 800px;
+	margin : auto;
+	/*border :1px solid black;*/
+	margin-top: 80px;
+}
+.content .left
+{
+	width : 48%;
+	min-height : 750px;
+	float : left;
+	/*border : 1px solid black;*/
+}
+.left .left1
+{
+	width: 45%;
+	height :200px;
+	/*border : 1px solid black;*/
+	border-radius :15px;
+	float : left;	
+	background-color:#fad8b7;
+	
+	
+}
+.left1 i
+{
+	font-size : 50px;
+	color :#422e30;
+	margin-left : 40%;
+	margin-top: 8%;
+	line-height : 100px;
+	cursor : pointer;
+	
+}
+.left1 h2,h3
+{
+	text-align : center;
+}
+.left .left2
+{
+	width: 45%;
+	height :200px;
+	/*border : 1px solid black;*/
+	border-radius :15px;
+	float : right;
+	background-color:#fad8b7;
+}
+.left2 i
+{
+	font-size : 60px;
+	color :#422e30;
+	margin-left : 40%;
+	margin-top: 10%;
+	line-height : 100px;
+	
+}
+.left2 h2,h3
+{
+	text-align : center;
+}
+.left .left3
+{
+	width: 45%;
+	height :200px;
+	/*border : 1px solid black;*/
+	border-radius :15px;
+	float : left;
+	margin-top : 25px;
+	background-color:#fad8b7;
+}
+.left3 i
+{
+	font-size : 50px;
+	color :#422e30;
+	margin-left : 40%;
+	margin-top: 10%;
+	line-height : 100px;
+	
+}
+.left3 h2,h3
+{
+	text-align : center;
+}
+.left .left4
+{
+	width: 45%;
+	height :200px;
+	/*border : 1px solid black;*/
+	border-radius :15px;
+	float : right;
+	margin-top : 25px;
+	background-color:#fad8b7;
+}
+.left4 i
+{
+	font-size : 50px;
+	color :#422e30;
+	margin-left : 40%;
+	margin-top: 10%;
+	line-height : 100px;
+	
+}
+.left4 h2,h3
+{
+	text-align : center;
+}
+.left .map
+{
+	width : 100%;
+	height : 500px;
+	
+}
+.map img
+{
+	width : 100%;
+	height : 250px;
+	margin-top : 20px;
+	border-radius : 15px;
+}
+.content .right
+{
+	width : 48%;
+	min-height : 400px;
+	float : right;
+	/*border  :1px solid black;*/
+}
+.right .top
+{
+	width : 100%;
+	height : 120px;
+	/*border :1px solid black;*/
+}
+.right .top h1
+{
+	font-size: 3em;
+	
+}
+.right .top p
+{
+	font-size: 1.2em;
+}
+.right .bottom
+{
+	width : 100%;
+	height : 600px;
+	/*border : 1px solid red;*/
+	margin-top : 30px;
+	
+}
+.bottom form
+{
+	width : 100%;
+	height : 100%;
+	
+}
+#name
+{
+	width : 100%;
+	height : 50px;
+	border-radius : 5px;
+	margin-top:10px;
+	margin-bottom : 20px;
+	border : 1px solid black;
+	padding-left : 10px;
+	font-size : 1.1em;
+}
+#email
+{
+	width : 100%;
+	height : 50px;
+	border-radius : 5px;
+	margin-top:10px;
+	margin-bottom : 20px;
+	border : 1px solid black;
+	padding-left : 10px;
+	font-size : 1.1em;
+}
+#subject
+{
+	width : 100%;
+	height : 50px;
+	border-radius : 5px;
+	margin-top:10px;
+	margin-bottom : 20px;
+	border : 1px solid black;
+	padding-left : 10px;
+	font-size : 1.1em;
+}
+#message
+{
+	width : 100%;
+	height : 100px;
+	border-radius : 5px;
+	margin-top:10px;
+	margin-bottom : 20px;
+	border : 1px solid black;
+	padding-left : 10px;
+	font-size : 1.5em;
+	padding-top : 10px;
+}
+.bottom button
+{
+	width : 100%;
+	height : 70px;
+	border-radius : 10px;
+	background-color:#c98459;
+	font-size:1.4em;
+	padding-left : 10px;
+	cursor : pointer;
+}
+
+form label
+{
+	font-size : 1.4em;
+}
+.footer
+{
+	width : 100%;
+	height : 320px;
+	background-color: #422e30;
+	padding-top : 20px;
+}
+.footer .main
+{
+	display : flex;
+	width : 80%;
+	height : 250px;
+	/*border : 1px solid red;*/
+	margin:auto;	
+}
+.main .m1
+{
+	width : 30%;
+	height : 200px;
+	/*border : 1px solid red;*/
+	/*margin : auto;*/
+	margin-top : 15px;
+}
+.m1:nth-child(1)
+{
+	margin-right : 80px;
+}
+.m1 img
+{
+	width : 120px;
+	height : 120px;
+}
+.m1 p
+{
+	font-size : 1.1em;
+	color : white;
+}
+.main .m2
+{
+	width : 22%;
+	height : 200px;
+	/*border : 1px solid red;*/
+	/*margin : auto;*/
+	padding-left : 10px;
+	margin-top : 15px;
+}
+.m2 : nth-child(2)
+{
+	margin-left : 10px;
+}
+.m2 h2
+{
+	color : white;
+	margin-top : 15px;
+}
+.m2 ul
+{
+	list-style-type : none;
+}
+.m2 ul li
+{
+	margin-top : 15px;
+}
+.m2 ul li a
+{
+	text-decoration : none;
+	color : white;
+	font-size : 1.1em;
+	
+
+}
+.m2 ul li p
+{
+	text-decoration : none;
+	color : white;
+	font-size : 1.1em;
+}
+.m2 ul li p i
+{
+	color : #c98459;
+	cursor : pointer;
+}
+.footer .main_footer
+{
+	width : 80%;
+	height : 50px;
+	margin : auto;
+	/*border : 1px solid red;*/
+}
+.main_footer
+{
+	color : white;
+	font-size : 1em;
+	text-align : center;
+	padding-top : 5px;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="./images/bread.png">
+		</div>
+		<div class="nav">
+			<a href="#">Home</a>
+			<a href="#">About Us</a>
+			<a href="#">Pages</a>
+			<a href="#">Contact us</a>
+		</div>
+		<div class="icon">	
+			<img src="./images/search.png">
+		</div>
+	</div>
+	<div class="slider">
+		<h1>Contact Us</h1>
+		<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates facilis iste eligendi, assumenda, inventore</p>
+	</div>
+	<div class="content">
+		<div class="left">
+			<div class="left1">
+				<i class="fa-solid fa-phone"></i>
+				<h2>Phone</h2>
+				<h3>2536-4589-5412</h3>
+			</div>
+			<div class="left2">
+				<i class="fa-brands fa-whatsapp"></i>
+				<h2>Whatsapp</h2>
+				<h3>2536-4589-5412</h3>
+			</div>
+			<div class="left3">
+				<i class="fa-solid fa-envelope"></i>
+				<h2>Email</h2>
+				<h3>something@gmail.com</h3>
+			</div>
+			<div class="left4">
+				<i class="fa-solid fa-store"></i>
+				<h2>Our Shop</h2>
+				<h3>1245 Near warje bridge Pune.</h3>
+			</div>
+			<div class="map">
+				<img src="./images/map.png">
+			</div>
+		</div>
+		<div class="right">
+			<div class="top">
+				<h1>Get In Touch</h1>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates facilis iste eligendi, assumenda, inventore</p>
+			</div>
+			<div class="bottom">
+				<form>
+					<label>Name</label><br>
+					<input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+
+					<label>Email</label><br>
+					<input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+
+					<label>Subject</label><br>
+					<input type="text" name="subject" id="subject" placeholder="Enter your subject" required><br>
+
+					<label>Message</label><br>
+					<textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea><br>
+
+					 <button type="submit">Send now</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="main">
+			<div class="m1">
+				<img src="./images/bread.png">
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates facilis iste eligendi, assumenda, inventore</p>
+			</div>
+			<div class="m2">
+				<h2>Our Store</h2>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="m2">
+				<h2>Further Links</h2>
+				<ul>
+					<li><a href="#">Terms & Condition</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Learning</a></li>
+					
+				</ul>
+			</div>
+			<div class="m2">
+				<h2>Get In Touch</h2>
+				<ul>
+					<li><p><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp&nbsp&nbsp1245 Near warje bridge Pune.</p></li>
+					<li><p><i class="fa-solid fa-phone"></i>&nbsp&nbsp&nbsp2536-4589-5412</p></li>
+					<li><p><i class="fa-solid fa-envelope"></i>&nbsp&nbsp&nbspsomething@gmail.com</p></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		<div class="main_footer">
+			<p>copyright &copy; 2024 Designed by Soham_Patil_</p>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

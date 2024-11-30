@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>June Batch 26_nov</title>
+	<!-- <link rel="stylesheet" href="D:\test\June Batch 26_nov.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*
+{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+}
+.container
+{
+	width : 100%;
+	min-height : 100px;
+	border : 1px solid black;
+}
+.header
+{
+	width : 100%;
+	height : 80px;
+}
+.header .logo
+{
+	width : 50%;
+	height : 100%;
+	float : left;
+	padding : 10px;
+	padding-left : 5%;
+	/* border : 1px solid black; */
+}
+.logo h2,p
+{
+	color : red;
+}
+.header .nav
+{
+	width : 25%;
+	height : 100%;
+	float : left;
+	/* border : 1px solid black; */
+	
+}
+.nav ul
+{
+	list-style-type : none;
+	margin-top : 30px;
+	margin-left : 20%;
+	
+}
+.nav ul li
+{
+	display : inline;
+}
+.nav ul li a
+{
+	text-decoration: none;
+	font-size : 1.3em;
+	color : black;
+	margin-left : 15px;
+}
+.header .social
+{
+	width : 25%;
+	height : 100%;
+	float : right;
+	/* border : 1px solid black; */
+}
+.social ul
+{
+	margin-top : 30px;
+	list-style-type : none;
+}
+.social ul li
+{
+	display : inline;
+	margin-left : 20px;
+}
+.social ul li i
+{
+	font-size : 1.5em;
+	color : red;
+}
+.container .slider
+{
+	width: 100%;
+	height:600px;
+	background-image : url(./images/dog_slider.jpg);
+	background-size : 100% 100%;
+	border :1px solid black;
+	margin-bottom: 50px;
+}
+.slider .content
+{
+	width : 50%;
+	height:100%;
+	padding-left :40px;
+	/* border : 1px solid black; */
+}
+.content h1
+{
+	margin-top : 25%;
+	font-size : 4em;
+	color:white;
+}
+.content p
+{
+	color:white;
+	font-size : 1.1em;
+}
+.content button
+{
+	width : 120px;
+	height : 40px;
+	font-size : 1.2em;
+	color : white;
+	border-radius : 10px;
+	background-color : red;
+	border : none;
+	cursor : pointer;
+}
+.container .main-content
+{
+	width : 80%;
+	height : 350px;
+	margin : auto;
+	/* border : 1px solid black; */
+}
+.main-content .info
+{
+	width : 45%;
+	height : 100%;
+	float : left;
+	/* border : 1px solid black; */
+}
+.info button
+{
+	width : 120px;
+	height : 40px;
+	font-size : 1.2em;
+	color : white;
+	border-radius : 10px;
+	color : black;
+	cursor : pointer;
+}
+.info h1
+{
+	font-size : 2.5em;
+}
+.info p
+{
+	color : black;
+	font-size : 1.1em;
+}
+.main-content .dog1
+{
+	width : 45%;
+	height : 100%;
+	float : right;
+	/* border : 1px solid black; */
+	
+}
+.dog1 img
+{
+	width : 100%;
+	height : 100%;
+}
+.container .info1
+{
+	width : 100%;
+	height : 250px;
+	background-color : black;
+	margin-top : 50px;
+	margin-bottom : 50px;
+}
+.info1 .sub
+{
+	width : 60%;
+	height : 100%;
+	margin : auto;
+	padding : 40px;
+}
+.sub p
+{
+	color : white;
+	font-size : 1.7em;
+	text-align : justify;
+}
+#author{
+	text-align : center;
+	font-size : 1.2em;
+}
+.container .box
+{
+	width : 80%;
+	height: 600px;
+	margin : auto;
+	/* border : 1px solid black; */
+}
+.box .box1
+{
+	width : 32%;
+	height : 100%;
+	float : left;
+	/* border : 1px solid black; */
+}
+.box1:nth-child(2)
+{
+	margin-left : 22px;
+	margin-right : 22px;
+}
+.box1 img
+{
+	width : 100%;
+	height : 300px;
+}
+.box1 h1{
+	margin-top : 20px;
+}
+.box1 p
+{
+	color : black;
+	font-size : 1.3em;
+}
+.box1 button{
+	width : 120px;
+	height : 40px;
+	font-size : 1.2em;
+	color : white;
+	border-radius : 10px;
+	color : black;
+	cursor : pointer;
+}
+.container .content1
+{
+	width : 100%;
+	height:500px;
+	margin-top:50px;
+	background-color:black;
+	padding-top:100px;
+	/* border :1px solid red; */
+}
+.content1 .content2
+{
+	width : 80%;
+	height : 350px;
+	margin:auto;
+	/* border:1px solid red;  */
+}
+.content2 .left
+{
+	width : 45%;
+	height : 100%;
+	float:left;
+	padding-top : 50px;
+	/* border:1px solid red; */
+	
+}
+.left h1
+{
+	color : white;
+}
+.left p
+{
+	color : white;
+}
+.content2 .right
+{
+	width:45%;
+	height:100%;
+	float:right;
+	/* border:1px solid red; */
+}
+.right 
+{
+	font-size:1.5em;
+	color:white;
+}
+
+.right table
+{
+	width:100%;
+	margin-bottom:20px;
+	
+}
+#name 	
+{ 
+ width : 96%; 
+ height : 30px;
+ background-color:lightgray;
+ border : none;
+ border-radius : 5px;
+ padding-left : 10px;
+} 
+#email 
+{ 
+ width : 100%; 
+ height : 30px;
+ background-color:lightgray;
+ border : none;
+ border-radius : 5px;
+ padding-left : 10px;
+} 
+#message
+{
+	width : 100%;
+	height : 150px;
+	border : none;
+	border-radius : 5px;
+	padding-left:10px;
+	background-color:lightgray;
+}
+.container .footer
+{
+	width:100%;
+	height:100px;
+}
+.footer .flogo
+{
+	width : 80%;
+	height : 100%;
+	float : left;
+	padding : 25px;
+	padding-left : 5%;
+}
+.flogo h2,p
+{
+	color : red;
+}
+.footer .fsocial
+{
+	width : 20%;
+	height : 100%;
+	float : right;
+	/* border : 1px solid black; */
+}
+.fsocial ul
+{
+	margin-top : 30px;
+	list-style-type : none;
+}
+.fsocial ul li
+{
+	display : inline;
+	margin-left : 20px;
+}
+.fsocial ul li i
+{
+	font-size : 2em;
+	color : red;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<h2>H A P P Y  D O G</h2>
+				<p>WALKS & HIKES</p>
+			</div>
+			<div class="nav">
+				<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Sevices</a></li>
+				<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="social">
+				<ul>
+				<li><i class="fa-brands fa-facebook"></i></li>
+				<li><i class="fa-brands fa-twitter"></i></li>
+				<li><i class="fa-brands fa-instagram"></i></li>
+				</ul>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="content">
+				<h1>The best dog<br>walks in portland</h1>
+				<p>We offer quality pet adventures and dog walking sevices at affortable rates to<br> meet all your beloved pet's exercise needs. </p><br>
+				<button>Book a walk</button>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="info">
+				<h1>About us</h1><br>
+				<p>Odit provident sed consequuntur molestias placeat eaque tenetur nemo vitae alias
+				aliquam similique eligendi, totam ea laudantium quas. Quas, ea? Mollitia molestias 
+				facere, illum in doloribus similique blanditiis sit vitae autem dolorum fugiat eaque 
+				necessitatibus aspernatur</p><br>
+				
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident sed 
+				consequuntur molestias placeat eaque tenetur nemo vitae alias aliquam similique 
+				eligendi, totam ea laudantium quas. Quas, ea? Mollitia molestias facere, illum in 
+				doloribus similique blanditiis sit vitae autem dolorum fugiat eaque necessitatibus 
+				aspernatur quibusdam, ducimus a temporibus incidunt.</p><br>
+				<button>Learn more</button>
+			</div>
+			<div class="dog1">
+				<img src="D:\test\images\dog1.jpeg">
+			</div>
+		</div>
+		<div class="info1">
+			<div class="sub">
+				<p>Odit provident sed consequuntur molestias placeat eaque tenetur nemo vitae alias
+					aliquam similique eligendi, totam ea laudantium quas. Quas, ea? Mollitia molestias 
+					facere, illum in doloribus similique blanditiis sit vitae autem dolorum fugiat eaque 
+					necessitatibus aspernatur</p>
+					<p id="author">-Akash Sawant</p>
+			</div>
+		</div>
+		<div class="box">
+			<div class="box1">
+				<img src="D:\test\images\dog1.jpeg">
+				<h1>Day trips</h1><br>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident sed 
+				consequuntur molestias placeat eaque tenetur nemo vitae alias aliquam similique 
+				eligendi, totam ea laudantium quas.</p><br>
+				<button>Learn more</button>
+			</div>
+			<div class="box1">
+				<img src="D:\test\images\dog2.jpeg">
+				<h1>Walks</h1><br>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident sed 
+				consequuntur molestias placeat eaque tenetur nemo vitae alias aliquam similique 
+				eligendi, totam ea laudantium quas.</p><br>
+				<button>Learn more</button>
+			</div>
+			<div class="box1">
+				<img src="D:\test\images\dog3.jpeg">
+				<h1>Play</h1><br>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit provident sed 
+				consequuntur molestias placeat eaque tenetur nemo vitae alias aliquam similique 
+				eligendi, totam ea laudantium quas.</p><br>
+				<button>Learn more</button>
+			</div>
+		</div>
+		<div class="content1">
+			<div class="content2">
+				<div class="left">
+					<h1>Get in touch</h1><br>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> <br>Odit provident sed 
+				consequuntur molestias placeat eaque tenetur nemo vitae alias aliquam similique 
+				eligendi, totam ea laudantium quas.</p>
+				</div>
+				<div class="right">
+					<form>
+						<table>
+							<tr>
+								<td id="left">
+									<label>Name</label><br>
+									<input type="text" name="name" id="name">
+								</td>
+								<td id="right">
+									<label id="lemail"`>Email Address*</label><br>
+									<input type="email" name="email" id="email">
+								</td>
+							</tr>
+						</table>
+						<label>Message</label><br>
+						<textarea id="message" name="message" rows="4"></textarea>
+					</form>
+				</div>
+			</div>
+		
+		</div>
+		<div class="footer">
+			<div class="flogo">
+				<h2>H A P P Y  D O G</h2>
+				<p>WALKS & HIKES</p>
+			</div>
+			
+			<div class="fsocial">
+				<ul>
+				<li><i class="fa-brands fa-facebook"></i></li>
+				<li><i class="fa-brands fa-twitter"></i></li>
+				<li><i class="fa-brands fa-instagram"></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
